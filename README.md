@@ -1,8 +1,13 @@
 # Zoekr
-#### A Simple Flickr search app
+#### A Simple Flickr search experiment.
 
 This app allows a user to search Flickr for photos with specific words. The results are displayed in an endless scrolling collectionView. Tapping a thumbnail will display the large image in a modal view.
 
+#### collection view
+![collection-view](https://raw.githubusercontent.com/johantenbroeke/zoekr/master/collection-view.png "collection-view")
+
+#### image view
+![image-view](https://raw.githubusercontent.com/johantenbroeke/zoekr/master/image-view.png "image-view")
 
 
 #### Dependencies

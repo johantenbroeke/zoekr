@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B96013F0EB093E89C0D7B6 /* libPods-zoekr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A57608E224F8D0FD1999A52F /* libPods-zoekr.a */; };
+		FA5234871CF05614007E5022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5234861CF05614007E5022 /* main.m */; };
+		FA52348A1CF05614007E5022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5234891CF05614007E5022 /* AppDelegate.m */; };
+		FA5234921CF05614007E5022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5234911CF05614007E5022 /* Assets.xcassets */; };
+		FA5234A01CF05614007E5022 /* zoekrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA52349F1CF05614007E5022 /* zoekrTests.m */; };
+		FA5234AB1CF05614007E5022 /* zoekrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5234AA1CF05614007E5022 /* zoekrUITests.m */; };
+		FA5234CC1CF36FBA007E5022 /* ZKRImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5234CB1CF36FBA007E5022 /* ZKRImageDetailViewController.m */; };
+		FA5234CF1CF36FC7007E5022 /* ZKRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5234CE1CF36FC7007E5022 /* ZKRMainViewController.m */; };
+		FA5234D21CF36FD4007E5022 /* ZKRThumbnailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5234D11CF36FD4007E5022 /* ZKRThumbnailCollectionViewCell.m */; };
+		FA5234D51CF37080007E5022 /* LayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5234D41CF37080007E5022 /* LayoutHelper.m */; };
+		FA5234D81CF37164007E5022 /* UIColor+ZKRColors.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5234D71CF37164007E5022 /* UIColor+ZKRColors.m */; };
+		FA5234DD1CF37C50007E5022 /* ZKRLoadingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5234DC1CF37C50007E5022 /* ZKRLoadingCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA52349C1CF05614007E5022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA52347A1CF05614007E5022 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA5234811CF05614007E5022;
+			remoteInfo = zoekr;
+		};
+		FA5234A71CF05614007E5022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA52347A1CF05614007E5022 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA5234811CF05614007E5022;
+			remoteInfo = zoekr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2356E63FA2BF749476681A3A /* Pods-zoekr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoekr.release.xcconfig"; path = "Pods/Target Support Files/Pods-zoekr/Pods-zoekr.release.xcconfig"; sourceTree = "<group>"; };
+		66F0B4DEBA99D4D023B0EF85 /* Pods-zoekr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoekr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zoekr/Pods-zoekr.debug.xcconfig"; sourceTree = "<group>"; };
+		A57608E224F8D0FD1999A52F /* libPods-zoekr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zoekr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5234821CF05614007E5022 /* zoekr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zoekr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5234861CF05614007E5022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA5234881CF05614007E5022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA5234891CF05614007E5022 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA5234911CF05614007E5022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA5234961CF05614007E5022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA52349B1CF05614007E5022 /* zoekrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zoekrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA52349F1CF05614007E5022 /* zoekrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zoekrTests.m; sourceTree = "<group>"; };
+		FA5234A11CF05614007E5022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5234A61CF05614007E5022 /* zoekrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zoekrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5234AA1CF05614007E5022 /* zoekrUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zoekrUITests.m; sourceTree = "<group>"; };
+		FA5234AC1CF05614007E5022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5234CA1CF36FB1007E5022 /* ZKRImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKRImageDetailViewController.h; sourceTree = "<group>"; };
+		FA5234CB1CF36FBA007E5022 /* ZKRImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKRImageDetailViewController.m; sourceTree = "<group>"; };
+		FA5234CD1CF36FC1007E5022 /* ZKRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKRMainViewController.h; sourceTree = "<group>"; };
+		FA5234CE1CF36FC7007E5022 /* ZKRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKRMainViewController.m; sourceTree = "<group>"; };
+		FA5234D01CF36FD4007E5022 /* ZKRThumbnailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKRThumbnailCollectionViewCell.h; sourceTree = "<group>"; };
+		FA5234D11CF36FD4007E5022 /* ZKRThumbnailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKRThumbnailCollectionViewCell.m; sourceTree = "<group>"; };
+		FA5234D31CF37080007E5022 /* LayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutHelper.h; sourceTree = "<group>"; };
+		FA5234D41CF37080007E5022 /* LayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutHelper.m; sourceTree = "<group>"; };
+		FA5234D61CF37164007E5022 /* UIColor+ZKRColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZKRColors.h"; sourceTree = "<group>"; };
+		FA5234D71CF37164007E5022 /* UIColor+ZKRColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZKRColors.m"; sourceTree = "<group>"; };
+		FA5234DA1CF3795D007E5022 /* settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settings.h; sourceTree = "<group>"; };
+		FA5234DB1CF37C50007E5022 /* ZKRLoadingCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKRLoadingCollectionViewCell.h; sourceTree = "<group>"; };
+		FA5234DC1CF37C50007E5022 /* ZKRLoadingCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKRLoadingCollectionViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA52347F1CF05614007E5022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B96013F0EB093E89C0D7B6 /* libPods-zoekr.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5234981CF05614007E5022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5234A31CF05614007E5022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		052C82B024DE92CFE7EAB895 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A57608E224F8D0FD1999A52F /* libPods-zoekr.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C814460CDAE737152D25F0F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66F0B4DEBA99D4D023B0EF85 /* Pods-zoekr.debug.xcconfig */,
+				2356E63FA2BF749476681A3A /* Pods-zoekr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA5234791CF05613007E5022 = {
+			isa = PBXGroup;
+			children = (
+				FA5234D91CF37940007E5022 /* settings */,
+				FA5234C51CF36EF5007E5022 /* controllers */,
+				FA5234C61CF36EF5007E5022 /* models */,
+				FA5234C71CF36EF5007E5022 /* style */,
+				FA5234C81CF36EF5007E5022 /* utils */,
+				FA5234C91CF36EF5007E5022 /* views */,
+				FA5234841CF05614007E5022 /* zoekr */,
+				FA52349E1CF05614007E5022 /* zoekrTests */,
+				FA5234A91CF05614007E5022 /* zoekrUITests */,
+				FA5234831CF05614007E5022 /* Products */,
+				C814460CDAE737152D25F0F2 /* Pods */,
+				052C82B024DE92CFE7EAB895 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA5234831CF05614007E5022 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA5234821CF05614007E5022 /* zoekr.app */,
+				FA52349B1CF05614007E5022 /* zoekrTests.xctest */,
+				FA5234A61CF05614007E5022 /* zoekrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA5234841CF05614007E5022 /* zoekr */ = {
+			isa = PBXGroup;
+			children = (
+				FA5234881CF05614007E5022 /* AppDelegate.h */,
+				FA5234891CF05614007E5022 /* AppDelegate.m */,
+				FA5234911CF05614007E5022 /* Assets.xcassets */,
+				FA5234961CF05614007E5022 /* Info.plist */,
+				FA5234851CF05614007E5022 /* Supporting Files */,
+			);
+			path = zoekr;
+			sourceTree = "<group>";
+		};
+		FA5234851CF05614007E5022 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA5234861CF05614007E5022 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA52349E1CF05614007E5022 /* zoekrTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA52349F1CF05614007E5022 /* zoekrTests.m */,
+				FA5234A11CF05614007E5022 /* Info.plist */,
+			);
+			path = zoekrTests;
+			sourceTree = "<group>";
+		};
+		FA5234A91CF05614007E5022 /* zoekrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA5234AA1CF05614007E5022 /* zoekrUITests.m */,
+				FA5234AC1CF05614007E5022 /* Info.plist */,
+			);
+			path = zoekrUITests;
+			sourceTree = "<group>";
+		};
+		FA5234C51CF36EF5007E5022 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA5234CD1CF36FC1007E5022 /* ZKRMainViewController.h */,
+				FA5234CE1CF36FC7007E5022 /* ZKRMainViewController.m */,
+				FA5234CA1CF36FB1007E5022 /* ZKRImageDetailViewController.h */,
+				FA5234CB1CF36FBA007E5022 /* ZKRImageDetailViewController.m */,
+			);
+			name = controllers;
+			path = zoekr/controllers;
+			sourceTree = "<group>";
+		};
+		FA5234C61CF36EF5007E5022 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			path = zoekr/models;
+			sourceTree = "<group>";
+		};
+		FA5234C71CF36EF5007E5022 /* style */ = {
+			isa = PBXGroup;
+			children = (
+				FA5234D61CF37164007E5022 /* UIColor+ZKRColors.h */,
+				FA5234D71CF37164007E5022 /* UIColor+ZKRColors.m */,
+			);
+			name = style;
+			path = zoekr/style;
+			sourceTree = "<group>";
+		};
+		FA5234C81CF36EF5007E5022 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA5234D31CF37080007E5022 /* LayoutHelper.h */,
+				FA5234D41CF37080007E5022 /* LayoutHelper.m */,
+			);
+			name = utils;
+			path = zoekr/utils;
+			sourceTree = "<group>";
+		};
+		FA5234C91CF36EF5007E5022 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FA5234D01CF36FD4007E5022 /* ZKRThumbnailCollectionViewCell.h */,
+				FA5234D11CF36FD4007E5022 /* ZKRThumbnailCollectionViewCell.m */,
+				FA5234DB1CF37C50007E5022 /* ZKRLoadingCollectionViewCell.h */,
+				FA5234DC1CF37C50007E5022 /* ZKRLoadingCollectionViewCell.m */,
+			);
+			name = views;
+			path = zoekr/views;
+			sourceTree = "<group>";
+		};
+		FA5234D91CF37940007E5022 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				FA5234DA1CF3795D007E5022 /* settings.h */,
+			);
+			name = settings;
+			path = zoekr/settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA5234811CF05614007E5022 /* zoekr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5234AF1CF05614007E5022 /* Build configuration list for PBXNativeTarget "zoekr" */;
+			buildPhases = (
+				A46B374C74BF32013FA55A9D /* 📦 Check Pods Manifest.lock */,
+				FA52347E1CF05614007E5022 /* Sources */,
+				FA52347F1CF05614007E5022 /* Frameworks */,
+				FA5234801CF05614007E5022 /* Resources */,
+				ACAE1729CB0A913D66F35AB4 /* 📦 Embed Pods Frameworks */,
+				8ADAEF201F38688ACEDF0584 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zoekr;
+			productName = zoekr;
+			productReference = FA5234821CF05614007E5022 /* zoekr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA52349A1CF05614007E5022 /* zoekrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5234B21CF05614007E5022 /* Build configuration list for PBXNativeTarget "zoekrTests" */;
+			buildPhases = (
+				FA5234971CF05614007E5022 /* Sources */,
+				FA5234981CF05614007E5022 /* Frameworks */,
+				FA5234991CF05614007E5022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA52349D1CF05614007E5022 /* PBXTargetDependency */,
+			);
+			name = zoekrTests;
+			productName = zoekrTests;
+			productReference = FA52349B1CF05614007E5022 /* zoekrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA5234A51CF05614007E5022 /* zoekrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5234B51CF05614007E5022 /* Build configuration list for PBXNativeTarget "zoekrUITests" */;
+			buildPhases = (
+				FA5234A21CF05614007E5022 /* Sources */,
+				FA5234A31CF05614007E5022 /* Frameworks */,
+				FA5234A41CF05614007E5022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5234A81CF05614007E5022 /* PBXTargetDependency */,
+			);
+			name = zoekrUITests;
+			productName = zoekrUITests;
+			productReference = FA5234A61CF05614007E5022 /* zoekrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA52347A1CF05614007E5022 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Johan Ten Broeke";
+				TargetAttributes = {
+					FA5234811CF05614007E5022 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FA52349A1CF05614007E5022 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FA5234811CF05614007E5022;
+					};
+					FA5234A51CF05614007E5022 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FA5234811CF05614007E5022;
+					};
+				};
+			};
+			buildConfigurationList = FA52347D1CF05614007E5022 /* Build configuration list for PBXProject "zoekr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA5234791CF05613007E5022;
+			productRefGroup = FA5234831CF05614007E5022 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA5234811CF05614007E5022 /* zoekr */,
+				FA52349A1CF05614007E5022 /* zoekrTests */,
+				FA5234A51CF05614007E5022 /* zoekrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA5234801CF05614007E5022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5234921CF05614007E5022 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5234991CF05614007E5022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5234A41CF05614007E5022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8ADAEF201F38688ACEDF0584 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zoekr/Pods-zoekr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A46B374C74BF32013FA55A9D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ACAE1729CB0A913D66F35AB4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zoekr/Pods-zoekr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA52347E1CF05614007E5022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5234CC1CF36FBA007E5022 /* ZKRImageDetailViewController.m in Sources */,
+				FA5234D51CF37080007E5022 /* LayoutHelper.m in Sources */,
+				FA5234CF1CF36FC7007E5022 /* ZKRMainViewController.m in Sources */,
+				FA52348A1CF05614007E5022 /* AppDelegate.m in Sources */,
+				FA5234D81CF37164007E5022 /* UIColor+ZKRColors.m in Sources */,
+				FA5234DD1CF37C50007E5022 /* ZKRLoadingCollectionViewCell.m in Sources */,
+				FA5234D21CF36FD4007E5022 /* ZKRThumbnailCollectionViewCell.m in Sources */,
+				FA5234871CF05614007E5022 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5234971CF05614007E5022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5234A01CF05614007E5022 /* zoekrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5234A21CF05614007E5022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5234AB1CF05614007E5022 /* zoekrUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA52349D1CF05614007E5022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA5234811CF05614007E5022 /* zoekr */;
+			targetProxy = FA52349C1CF05614007E5022 /* PBXContainerItemProxy */;
+		};
+		FA5234A81CF05614007E5022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA5234811CF05614007E5022 /* zoekr */;
+			targetProxy = FA5234A71CF05614007E5022 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA5234AD1CF05614007E5022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA5234AE1CF05614007E5022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA5234B01CF05614007E5022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F0B4DEBA99D4D023B0EF85 /* Pods-zoekr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = zoekr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.fullscreen.zoekr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA5234B11CF05614007E5022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2356E63FA2BF749476681A3A /* Pods-zoekr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = zoekr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.fullscreen.zoekr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA5234B31CF05614007E5022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = zoekrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.fullscreen.zoekrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zoekr.app/zoekr";
+			};
+			name = Debug;
+		};
+		FA5234B41CF05614007E5022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = zoekrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.fullscreen.zoekrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zoekr.app/zoekr";
+			};
+			name = Release;
+		};
+		FA5234B61CF05614007E5022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = zoekrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.fullscreen.zoekrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = zoekr;
+			};
+			name = Debug;
+		};
+		FA5234B71CF05614007E5022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = zoekrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.fullscreen.zoekrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = zoekr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA52347D1CF05614007E5022 /* Build configuration list for PBXProject "zoekr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5234AD1CF05614007E5022 /* Debug */,
+				FA5234AE1CF05614007E5022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5234AF1CF05614007E5022 /* Build configuration list for PBXNativeTarget "zoekr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5234B01CF05614007E5022 /* Debug */,
+				FA5234B11CF05614007E5022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5234B21CF05614007E5022 /* Build configuration list for PBXNativeTarget "zoekrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5234B31CF05614007E5022 /* Debug */,
+				FA5234B41CF05614007E5022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5234B51CF05614007E5022 /* Build configuration list for PBXNativeTarget "zoekrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5234B61CF05614007E5022 /* Debug */,
+				FA5234B71CF05614007E5022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA52347A1CF05614007E5022 /* Project object */;
+}
